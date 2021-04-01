@@ -42,6 +42,9 @@
 		]
     },
     "weights": {
+	    "starting_items": [
+            "ocarina"
+        ],
         "logic_rules": {
             "glitchless": 100,
             "glitched": 0,
