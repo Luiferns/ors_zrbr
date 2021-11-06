@@ -1,15 +1,18 @@
 {
     "options": {
-        "bridge_tokens_max": 75,
-        "lacs_tokens_max": 75,
+        "bridge_tokens_max": 60,
+        "ganon_bosskey_tokens_max": 60,
         "triforce_goal_per_world_max": 100,
         "starting_items": true,
+        "allow_random_and_plando": false,
         "conditionals": {
-            "exclude_minimal_triforce_hunt": true,
-            "exclude_ice_trap_misery": true,
-            "disable_fortresskeys_independence": true,
-            "disable_lacs_condition_ifnot_ganonbosskey": true,
-            "restrict_one_entrance_randomizer": false
+            "exclude_minimal_triforce_hunt": [true],
+            "exclude_ice_trap_misery": [true],
+            "disable_hideoutkeys_independence": [true],
+            "restrict_one_entrance_randomizer": [false],
+            "random_scrubs_start_wallet": [true],
+            "dynamic_skulltula_wincon": [true, 15, "40/40/20"],
+            "shuffle_goal_hints": [false, 50]
         },
         "tricks": [
             "logic_fewer_tunic_requirements",
@@ -102,8 +105,8 @@
             "9": 1
         },
         "triforce_hunt": {
-            "true": 3,
-            "false": 17
+            "true": 15,
+            "false": 85
         },
         "bombchus_in_logic": {
             "true": 1,
@@ -231,16 +234,16 @@
             "false": 2
         },
         "shuffle_gerudo_card": {
-            "true": 1,
-            "false": 2
+            "true": 33,
+            "false": 67
         },
         "shuffle_beans": {
-            "true": 1,
-            "false": 2
+            "true": 33,
+            "false": 67
         },
         "shuffle_medigoron_carpet_salesman": {
-            "true": 1,
-            "false": 2
+            "true": 33,
+            "false": 67
         },
         "shuffle_mapcompass": {
             "remove": 0,
@@ -259,7 +262,7 @@
             "any_dungeon": 11.16,
             "keysanity": 11.16
         },
-        "shuffle_fortresskeys": {
+        "shuffle_hideoutkeys": {
             "vanilla": 1,
             "overworld": 0,
             "any_dungeon": 0,
@@ -280,16 +283,13 @@
             "overworld": 5,
             "any_dungeon": 5,
             "keysanity": 5,
-            "on_lacs": 40
+            "on_lacs": 40,
+            "medallions": 0,
+            "stones": 0,
+            "dungeons": 0,
+            "tokens": 0
         },
-        "lacs_condition": {
-            "vanilla": 3,
-            "medallions": 3,
-            "stones": 3,
-            "dungeons": 3,
-            "tokens": 8
-        },
-        "lacs_medallions": {
+        "ganon_bosskey_medallions": {
             "1": 1,
             "2": 1,
             "3": 1,
@@ -297,12 +297,12 @@
             "5": 1,
             "6": 5
         },
-        "lacs_stones": {
+        "ganon_bosskey_stones": {
             "1": 1,
             "2": 1,
             "3": 2
         },
-        "lacs_rewards": {
+        "ganon_bosskey_rewards": {
             "1": 1,
             "2": 1,
             "3": 1,
@@ -314,8 +314,8 @@
             "9": 1
         },
         "enhance_map_compass": {
-            "true": 50,
-            "false": 50
+            "true": 1,
+            "false": 1
         },
         "reachable_locations": {
             "all": 50,
@@ -343,8 +343,8 @@
             "false": 20
         },
         "skip_some_minigame_phases": {
-            "true": 80,
-            "false": 20
+            "true": 100,
+            "false": 0
         },
         "useful_cutscenes": {
             "true": 0,
@@ -394,7 +394,7 @@
         },
         "ocarina_songs": {
             "true": 0,
-            "false": 1
+            "false": 100
         },
         "correct_chest_sizes": {
             "true": 50,
@@ -424,7 +424,9 @@
             "tournament_s3": 0,
             "useless": 20,
             "very_strong": 20,
-            "mw2": 0
+            "mw2": 0,
+            "league": 0,
+            "coop2": 0
         },
         "misc_hints": {
             "true": 100,
@@ -443,8 +445,8 @@
             "ohko": 0
         },
         "no_collectible_hearts": {
-            "true": 1,
-            "false": 9
+            "true": 10,
+            "false": 90
         },
         "starting_tod": {
             "default": 1,
